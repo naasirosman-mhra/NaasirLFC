@@ -51,8 +51,7 @@
                     "appLocation": "[parameters('appLocation')]",
                     "apiLocation": "[parameters('apiLocation')]",
                     "appArtifactLocation": "[parameters('appArtifactLocation')]"
-                },
-                "areStaticSitesDistributedBackendsEnabled": "[parameters('areStaticSitesDistributedBackendsEnabled')]"
+                }
             },
             "sku": {
                 "Tier": "[parameters('sku')]",
