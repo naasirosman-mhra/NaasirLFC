@@ -21,7 +21,7 @@
             "value": "main"
         },
         "repositoryToken": {
-            "value": null
+            "value": "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"
         },
         "appLocation": {
             "value": "/"
@@ -31,9 +31,6 @@
         },
         "appArtifactLocation": {
             "value": ""
-        },
-        "areStaticSitesDistributedBackendsEnabled": {
-            "value": false
         }
     }
 }
