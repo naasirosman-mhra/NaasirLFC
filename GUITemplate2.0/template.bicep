@@ -10,13 +10,10 @@ resource staticSites_stapp_bicep_name_resource 'Microsoft.Web/staticSites@2022-0
   properties: {
     repositoryUrl: 'https://github.com/naasirosman-mhra/NaasirLFC'
     repositoryToken: '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'
-    branch: 'dev'
+    branch: 'main'
     stagingEnvironmentPolicy: 'Enabled'
     allowConfigFileUpdates: true
     provider: 'GitHub'
     enterpriseGradeCdnStatus: 'Disabled'
-    buildProperties: {
-      skipGithubActionWorkflowGeneration: false
-    }
   }
 }
