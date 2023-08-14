@@ -4,6 +4,14 @@
     "parameters": {
         "staticSites_stapp_bicep_name": {
             "value": null
+        },
+        "repoToken": {
+          "reference": {
+            "keyVault": {
+              "id": "/subscriptions/<subscription-id>/resourceGroups/<rg-name>/providers/Microsoft.KeyVault/vaults/repoToken"
+            },
+            "secretName": "token"
+          }
         }
     }
 }

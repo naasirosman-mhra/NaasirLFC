@@ -1,4 +1,6 @@
 param staticSites_stapp_bicep_name string = 'stapp-bicep'
+@secure()
+param repoToken string
 
 resource staticSites_stapp_bicep_name_resource 'Microsoft.Web/staticSites@2022-09-01' = {
   name: staticSites_stapp_bicep_name
@@ -9,8 +11,8 @@ resource staticSites_stapp_bicep_name_resource 'Microsoft.Web/staticSites@2022-0
   }
   properties: {
     repositoryUrl: 'https://github.com/naasirosman-mhra/NaasirLFC'
-    repositoryToken: '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'
-    branch: 'main'
+    repositoryToken: repoToken
+    branch: 'main' 
     stagingEnvironmentPolicy: 'Enabled'
     allowConfigFileUpdates: true
     provider: 'GitHub'
