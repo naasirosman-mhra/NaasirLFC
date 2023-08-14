@@ -17,5 +17,5 @@ resource staticSites_stapp_bicep_name_resource 'Microsoft.Web/staticSites@2022-0
     allowConfigFileUpdates: true
     provider: 'GitHub'
     enterpriseGradeCdnStatus: 'Disabled' 
-  }
+  } 
 }
