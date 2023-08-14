@@ -1,4 +1,4 @@
-param staticSites_stapp_bicep_name string = 'stapp-bicep2.0'
+param staticSites_stapp_bicep_name string = 'stapp-bicep'
 
 resource staticSites_stapp_bicep_name_resource 'Microsoft.Web/staticSites@2022-09-01' = {
   name: staticSites_stapp_bicep_name
