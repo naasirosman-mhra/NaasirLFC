@@ -32,6 +32,10 @@ jobs:
           output_location: "" # Built app content directory - optional
           ###### End of Repository/Build Configurations ######
 
+  CI:
+    uses: ./.github/workflows/ci.yml
+    if: github.event_name == 'push'
+
   close_pull_request_job:
     if: github.event_name == 'pull_request' && github.event.action == 'closed'
     runs-on: ubuntu-latest
