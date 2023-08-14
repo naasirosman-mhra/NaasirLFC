@@ -8,7 +8,7 @@
         "repoToken": {
           "reference": {
             "keyVault": {
-              "id": "/subscriptions/<subscription-id>/resourceGroups/<rg-name>/providers/Microsoft.KeyVault/vaults/repoToken"
+              "id": "/subscriptions/c48669f3-6178-4469-be66-0b67921115c4/resourceGroups/myRG/providers/Microsoft.KeyVault/vaults/repoToken"
             },
             "secretName": "token"
           }
