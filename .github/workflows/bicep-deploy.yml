@@ -5,14 +5,14 @@ on:
     branches:
       - main
     paths:
-      - "GUITemplate2.0"
+      - "./GUITemplate2.0"
       - ".github/workflows/bicep-deploy.yml"
   pull_request:
     types: [opened, synchronize, reopened ]
     branches:
       - main
     paths:
-      - "GUITemplate2.0"
+      - "./GUITemplate2.0"
       - ".github/workflows/bicep-deploy.yml"
 
 jobs:
