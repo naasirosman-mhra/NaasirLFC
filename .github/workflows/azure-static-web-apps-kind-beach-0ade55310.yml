@@ -14,17 +14,6 @@ jobs:
     uses: ./.github/workflows/ci.yml
     if: github.event_name == 'push'
 
-  build-and-deploy-bicep:
-    runs-on: ubuntu-latest
-    steps:
-      - uses: azure/login@v1
-        with:
-         creds: ${{ secrets.AZURE_CREDENTIALS }}
-
-
-
-
-
   build_and_deploy_job:
     if: github.event_name == 'push' || (github.event_name == 'pull_request' && github.event.action != 'closed')
     runs-on: ubuntu-latest
