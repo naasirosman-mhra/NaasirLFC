@@ -9,7 +9,7 @@ on:
     branches:
       - main
 
-jobs:
+jobs: 
   CI:
     uses: ./.github/workflows/ci.yml
     if: github.event_name == 'push'
